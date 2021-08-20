@@ -28,7 +28,6 @@ dec.t.break1 <- 2020+(1/12) # Feb 2020
 dec.t.break2 <- 2020.250 # Apr 2020
 dec.t.break3 <- 2020+(5/12) # Jun 2020
 
-# this is introducing new variables x2,t and x3,5 in textbook, x1,t is the first fragment
 # get exact year number after turning point
 dec.tb1 <- ts(pmax(0, dec.t - dec.t.break1), frequency = 12, start = c(2018,9))
 dec.tb2 <- ts(pmax(0, dec.t - dec.t.break2), frequency = 12, start = c(2018,9))
